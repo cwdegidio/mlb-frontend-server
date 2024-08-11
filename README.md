@@ -1,4 +1,4 @@
-# MLB Batting Leader Board
+# MLB Batting Leader Board - Frontend
 
 This is a project created using Vite + React and Recharts. It is used to display data that is collected from the MLB Analyzer after being scraped each morning.
 
