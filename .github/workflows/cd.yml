@@ -24,10 +24,9 @@ jobs:
         - name: Clean install npm packages
           run: npm ci
 
-        - name: Docker build and run container
+        - name: Docker build container
           run: |
             docker build . -t "mlb-frontend-server"
-            sudo docker run -p 3000:3000 mlb-frontend-server:latest
 
         - name: Login to Dockerhub
           uses: docker/login-action@v3
