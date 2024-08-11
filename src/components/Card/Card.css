@@ -1,0 +1,41 @@
+.player-card {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.player-card__header {
+    background-color: #64b5b7;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.player-card__body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.player-card__stat {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.player-card__stat:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.stat-header,
+.stat-value {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    line-height: 1.25;
+}

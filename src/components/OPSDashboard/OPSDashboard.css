@@ -1,0 +1,10 @@
+.split-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1155px) {
+    .split-container {
+        flex-direction: column;
+    }
+}

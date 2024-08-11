@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  mlb-frontend-server:
+    stdin_open: true
+    tty: true
+    networks:
+      - mlb-net
+    ports:
+      - "3000:3000"
+    container_name: mlb-analyzer-frontend
+    image: webguy1979/mlb-frontend-server:latest
+    restart: on-failure
+networks:
+  mlb-net:
+    external: true
+    name: mlb-net
